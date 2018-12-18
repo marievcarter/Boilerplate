@@ -4,23 +4,31 @@
   "description": "General project boilerplate.",
   "main": "main.js",
   "scripts": {
+    "start": "node main.js",
+    "start-dev": "webpack -w & nodemon main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marie Carter",
   "license": "ISC",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-router-dom": "^4.3.1"
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
+    "babel-preset-es2015": "^6.24.1",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
   }
